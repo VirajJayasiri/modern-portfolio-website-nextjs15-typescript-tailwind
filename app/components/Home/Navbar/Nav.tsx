@@ -5,7 +5,11 @@ import { BiDownload } from 'react-icons/bi'
 import { FaCode } from 'react-icons/fa'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
-const Nav = () => {
+type Props = {
+   openNav:()=>void
+};
+
+const Nav = ({openNav}:Props) => {
    const [navBg,setNavBg] = useState(false);
    useEffect(()=>{
       const handler = () => {
@@ -23,7 +27,7 @@ const Nav = () => {
    },[]
 )
   return (
-    <div className={`transition-all ${navBg ? 'bg-[#EFE9E3] shadow-md' : 'fixed'} duration-200 h-[12vh] z-[10000] fixed w-full`}>
+    <div className={`transition-all ${navBg ? 'bg-[#F1FAEE] shadow-md' : 'fixed'} duration-200 h-[12vh] z-[10000] fixed w-full`}>
       <div className='flex items-center h-full justify-between w-[90%] mx-auto'>
 
          {/* Logo Section */}
@@ -42,7 +46,7 @@ const Nav = () => {
                <a
                   key={link.id}
                   href={link.url}
-                  className="text-base text-black font-medium transition-all duration-200 hover:text-[#D9CFC7]">
+                  className="text-base text-[#e71d36] font-medium transition-all duration-200 hover:text-black">
                   <p>{link.label}</p>
                </a>
                );
@@ -53,13 +57,13 @@ const Nav = () => {
          <div className='flex items-center space-x-4'>
 
             {/* CV Button */}
-            <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#D9CFC7] hover:bg-[#C9B59C] transition-all duration-300 text-black flex items-center space-x-2'>
+            <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#a8dadc] hover:bg-[#457b9d] hover:text-[white] transition-all duration-300 text-black flex items-center space-x-2'>
                <BiDownload className='w-5 h-5'/>
                <span>Donwload CV</span>
             </button>
 
             {/* Burger Menu */}
-            <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-black lg:hidden'/>
+            <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-black lg:hidden'/>
          </div>
       </div>
     </div>
