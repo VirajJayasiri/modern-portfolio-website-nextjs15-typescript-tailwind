@@ -27,7 +27,14 @@ const Nav = ({openNav}:Props) => {
    },[]
 )
   return (
-    <div className={`transition-all ${navBg ? 'bg-[#F1FAEE] shadow-md' : 'fixed'} duration-200 h-[12vh] z-[10000] fixed w-full`}>
+    <div
+      className={`fixed top-0 w-full h-[9vh] z-50 transition-all duration-300
+      ${
+         navBg
+            ? "bg-white/80 shadow-lg"
+            : "bg-white/40 backdrop-blur-lg border-b border-black/5"
+      }`}>
+
       <div className='flex items-center h-full justify-between w-[90%] mx-auto'>
 
          {/* Logo Section */}
