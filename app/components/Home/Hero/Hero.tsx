@@ -11,7 +11,7 @@ const Hero = () => {
       <ParticlesHero />
 
       <div className="relative z-10  flex flex-col items-center">
-         <Image src="/images/s1.jpg" alt="Hero Image" width={150} height={150} className="rounded-full border-8 border-[#A594F9]" />
+         <Image src="/images/s1.jpg" alt="Hero Image" width={150} height={150} className="rounded-full border-8 border-[#A8DADC]" />
          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wide">Creating Web Products, <br />Brands<span className="text-[#1D3557]"> & Experiences.</span></h1>
          <h2 className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center">
             Hi! I'm Viraj Jayasiri - A Passionate

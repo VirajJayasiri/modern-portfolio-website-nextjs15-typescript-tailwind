@@ -1,6 +1,8 @@
 import Hero from './Hero/Hero'
+import Projects from './Projects/Projects'
 import Resume from './Resume/Resume'
 import Services from './Services/Services'
+import Skills from './Skills/Skills'
 
 const Home = () => {
   return (
@@ -8,6 +10,8 @@ const Home = () => {
       <Hero />
       <Services />
       <Resume />
+      <Projects />
+      <Skills />
     </div>
   )
 }

@@ -2,7 +2,7 @@
 import { NavLinks } from '@/constant/constant'
 import React, { useEffect, useState } from 'react'
 import { BiDownload } from 'react-icons/bi'
-import { FaCode } from 'react-icons/fa'
+import { FaLaptopCode } from 'react-icons/fa'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
 type Props = {
@@ -28,19 +28,20 @@ const Nav = ({openNav}:Props) => {
 )
   return (
     <div
-      className={`fixed top-0 w-full h-[9vh] z-50 transition-all duration-300
-      ${
-         navBg
-            ? "bg-white/80 shadow-lg"
-            : "bg-white/40 backdrop-blur-lg border-b border-black/5"
-      }`}>
-
+  className={`fixed top-0 left-0 w-full h-[9vh] z-50 transition-all duration-300
+    ${
+      navBg
+        ? "bg-white/60 backdrop-blur-[2px] border-b border-black/25"
+        : "bg-transparent backdrop-blur-0 border-b border-transparent"
+      }`}
+      >
+         
       <div className='flex items-center h-full justify-between w-[90%] mx-auto'>
 
          {/* Logo Section */}
          <div className='flex items-center space-x-2'>
             <div className='w-10 h-10 bg-black rounded-full flex items-center justify-center flex-col'>
-               <FaCode className='w-5 h-5 text-white'/>
+               <FaLaptopCode className='w-5 h-5 text-white'/>
             </div>
             <h1 className='text-xl hidden sm:block md:text-2xl text-black font-bold'>VIRAJ JAYASIRI</h1>
          </div>
@@ -53,7 +54,7 @@ const Nav = ({openNav}:Props) => {
                <a
                   key={link.id}
                   href={link.url}
-                  className="text-base text-[#e71d36] font-medium transition-all duration-200 hover:text-black">
+                  className="text-base text-[#e71d36] font-medium transition-all duration-200 hover:text-[#1D3557]">
                   <p>{link.label}</p>
                </a>
                );
@@ -64,7 +65,7 @@ const Nav = ({openNav}:Props) => {
          <div className='flex items-center space-x-4'>
 
             {/* CV Button */}
-            <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#a8dadc] hover:bg-[#457b9d] hover:text-[white] transition-all duration-300 text-black flex items-center space-x-2'>
+            <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#a8dadc] hover:bg-[#457b9d] hover:text-[white] transition-all duration-300 text-[#1D3557] flex items-center space-x-2'>
                <BiDownload className='w-5 h-5'/>
                <span>Donwload CV</span>
             </button>

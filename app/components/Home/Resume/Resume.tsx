@@ -3,7 +3,7 @@ import { BsDatabase } from 'react-icons/bs'
 import { FaMicrosoft, FaReact } from 'react-icons/fa'
 import { HiAcademicCap} from 'react-icons/hi2';
 import { HiLibrary } from 'react-icons/hi';
-import { LiaLaptopCodeSolid } from 'react-icons/lia';
+import { LuFileCode } from 'react-icons/lu';
 
 const Resume = () => {
   return (
@@ -14,7 +14,7 @@ const Resume = () => {
             <h1 className='text-3xl sm:text-4xl font-bold text-[#E63946]'>My Work<span className='text-[#1D3557]'> Experience</span>
             </h1>
             <div className='mt-10'>
-               <ResumeCard Icon={LiaLaptopCodeSolid} role="Full-Stack Developer" />
+               <ResumeCard Icon={LuFileCode} role="Full-Stack Developer" />
                <ResumeCard Icon={FaReact} role="Front-End Developer" />
                <ResumeCard Icon={BsDatabase} role="Back-End Developer" />
             </div>
