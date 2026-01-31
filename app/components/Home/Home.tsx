@@ -1,3 +1,4 @@
+import ClientReview from './ClientReview/ClientReview'
 import Hero from './Hero/Hero'
 import Projects from './Projects/Projects'
 import Resume from './Resume/Resume'
@@ -12,6 +13,7 @@ const Home = () => {
       <Resume />
       <Projects />
       <Skills />
+      <ClientReview />
     </div>
   )
 }
