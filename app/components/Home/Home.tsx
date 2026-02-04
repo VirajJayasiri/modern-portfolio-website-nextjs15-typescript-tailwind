@@ -1,5 +1,6 @@
 import Blog from './Blog/Blog'
 import ClientReview from './ClientReview/ClientReview'
+import Contact from './Contact/Contact'
 import Hero from './Hero/Hero'
 import Projects from './Projects/Projects'
 import Resume from './Resume/Resume'
@@ -16,6 +17,7 @@ const Home = () => {
       <Skills />
       <ClientReview />
       <Blog />
+      <Contact/>
     </div>
   )
 }
