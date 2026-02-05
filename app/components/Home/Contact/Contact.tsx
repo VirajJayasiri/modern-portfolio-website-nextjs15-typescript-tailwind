@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 const Contact = () => {
   return (
-    <div className='pt-16 pb-16'>
+    <div id='contact' className='pt-16 pb-16'>
       <div className='w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
          {/* Text Content */}
          <div>
@@ -42,12 +42,44 @@ const Contact = () => {
             </div>
          </div>
          {/* Form */}
-         <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="0" className='md:p-10 p-5 bg-[#A8DADC] rounded-lg'>
-            <input type="text" placeholder='Name' className='px-4 py-3.5 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70'/>
-            <input type="email" placeholder='Email Address' className='px-4 py-3.5 mt-6 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70'/>
-            <input type="text" placeholder='Phone Number' className='px-4 py-3.5 mt-6 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70'/>
-            <textarea name="message" placeholder="Your Message" className='px-4 py-3.5 mt-6 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70 h-[10rem]'></textarea>
-            <button className='mt-8 px-12 py-4 bg-[#E63946] hover:bg-[#000000] transition-all duration-300 cursor-pointer text-white rounded-full'>Send Messsage</button>
+         <div data-aos="zoom-in" data-aos-delay="100" className='md:p-10 p-5 bg-[#A8DADC] rounded-lg'>
+            <form>
+               <input 
+                  type="text" 
+                  placeholder='Name' 
+                  name="name"
+                  aria-label="Your name"
+                  className='px-4 py-3.5 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70'
+               />
+               <input 
+                  type="email" 
+                  placeholder='Email Address' 
+                  name="email"
+                  aria-label="Your email"
+                  className='px-4 py-3.5 mt-6 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70'
+               />
+               <input 
+                  type="tel" 
+                  placeholder='Phone Number' 
+                  name="phone"
+                  aria-label="Your phone number"
+                  className='px-4 py-3.5 mt-6 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70'
+               />
+               <textarea 
+                  name="message" 
+                  placeholder="Your Message" 
+                  aria-label="Your message"
+                  rows={5}
+                  className='px-4 py-3.5 mt-6 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70 h-40 resize-none'
+               ></textarea>
+               <button 
+                  type="submit"
+                  aria-label="Send message"
+                  className='mt-8 px-12 py-4 bg-[#E63946] hover:bg-[#000000] transition-all duration-300 cursor-pointer text-white rounded-full'
+               >
+                  Send Message
+               </button>
+            </form>
          </div>
       </div>
     </div>

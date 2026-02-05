@@ -26,7 +26,7 @@ export default function ParticlesHero() {
   }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
+    // Particle system initialized
   };
 
   const options: ISourceOptions = useMemo(

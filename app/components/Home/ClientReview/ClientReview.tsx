@@ -40,7 +40,7 @@ const ClientReview = () => {
             <ClientReviewCard  image="/images/c3.png" name="Kate Grant" role="CEO, Tech Company" />
             <ClientReviewCard  image="/images/c4.png" name="Sara Summers" role="Web Developer" />
             <ClientReviewCard  image="/images/c5.png" name="Peter Johnson" role="CEO, Design Studio" />
-         </Carousel>;
+         </Carousel>
       </div>
     </div>
   )

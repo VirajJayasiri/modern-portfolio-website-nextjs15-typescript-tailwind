@@ -65,13 +65,23 @@ const Nav = ({openNav}:Props) => {
          <div className='flex items-center space-x-4'>
 
             {/* CV Button */}
-            <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#a8dadc] hover:bg-[#457b9d] hover:text-[white] transition-all duration-300 text-[#1D3557] flex items-center space-x-2'>
+            <button 
+               className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#a8dadc] hover:bg-[#457b9d] hover:text-[white] transition-all duration-300 text-[#1D3557] flex items-center space-x-2'
+               aria-label="Download CV"
+            >
                <BiDownload className='w-5 h-5'/>
-               <span>Donwload CV</span>
+               <span>Download CV</span>
             </button>
 
             {/* Burger Menu */}
-            <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-black lg:hidden'/>
+            <HiBars3BottomRight 
+               onClick={openNav} 
+               className='w-8 h-8 cursor-pointer text-black lg:hidden'
+               aria-label="Open navigation menu"
+               role="button"
+               tabIndex={0}
+               onKeyDown={(e) => e.key === 'Enter' && openNav()}
+            />
          </div>
       </div>
     </div>

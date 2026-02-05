@@ -42,7 +42,7 @@ const Skills = () => {
               glareColor="#ffffff"
               glarePosition="all"
             >
-              <div data-aos="flip-right" data-aos-anchor-placement="top-center" data-aos-delay="{i * 100}"
+              <div data-aos="flip-right" data-aos-anchor-placement="top-center" data-aos-delay={i * 100}
                 className="
                   w-44 h-44
                   rounded-3xl

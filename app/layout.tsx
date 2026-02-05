@@ -13,6 +13,24 @@ const font = Inter({
 export const metadata: Metadata = {
   title: "Viraj Jayasiri | Portfolio",
   description: "Modern portfolio website built with Next.js 15, TypeScript, and Tailwind CSS.",
+  keywords: ["Viraj Jayasiri", "Portfolio", "Web Developer", "Frontend Developer", "Backend Developer", "Next.js", "React", "TypeScript"],
+  authors: [{ name: "Viraj Jayasiri" }],
+  openGraph: {
+    title: "Viraj Jayasiri | Portfolio",
+    description: "Modern portfolio website built with Next.js 15, TypeScript, and Tailwind CSS.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Viraj Jayasiri Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Viraj Jayasiri | Portfolio",
+    description: "Modern portfolio website built with Next.js 15, TypeScript, and Tailwind CSS.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${font.className} antialiased bg-white`}
       >

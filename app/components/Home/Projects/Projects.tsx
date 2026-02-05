@@ -30,6 +30,8 @@ const Projects = () => {
               width={800}
               height={650}
               className="rounded-lg"
+              placeholder="empty"
+              quality={90}
             />
           </div>
 
@@ -61,6 +63,8 @@ const Projects = () => {
               width={800}
               height={650}
               className="rounded-lg"
+              placeholder="empty"
+              quality={90}
             />
           </div>
 
@@ -93,6 +97,8 @@ const Projects = () => {
               width={800}
               height={650}
               className="rounded-lg"
+              placeholder="empty"
+              quality={90}
             />
           </div>
 
@@ -125,6 +131,8 @@ const Projects = () => {
               width={800}
               height={650}
               className="rounded-lg"
+              placeholder="empty"
+              quality={90}
             />
           </div>
 

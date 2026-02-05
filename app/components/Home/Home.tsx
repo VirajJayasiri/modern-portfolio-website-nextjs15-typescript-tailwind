@@ -1,15 +1,17 @@
 'use client';
-import { use, useEffect } from 'react';
-import Blog from './Blog/Blog'
-import ClientReview from './ClientReview/ClientReview'
-import Contact from './Contact/Contact'
-import Hero from './Hero/Hero'
-import Projects from './Projects/Projects'
-import Resume from './Resume/Resume'
-import Services from './Services/Services'
-import Skills from './Skills/Skills'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useEffect } from 'react';
+import dynamic from 'next/dynamic';
+import Hero from './Hero/Hero';
+import 'aos/dist/aos.css';
+
+// Dynamically import components to improve initial load time
+const Blog = dynamic(() => import('./Blog/Blog'));
+const ClientReview = dynamic(() => import('./ClientReview/ClientReview'));
+const Contact = dynamic(() => import('./Contact/Contact'));
+const Projects = dynamic(() => import('./Projects/Projects'));
+const Resume = dynamic(() => import('./Resume/Resume'));
+const Services = dynamic(() => import('./Services/Services'));
+const Skills = dynamic(() => import('./Skills/Skills'));
 
 const Home = () => {
 
@@ -19,8 +21,9 @@ const Home = () => {
 
     AOS.init({
       duration: 1000,
-      easing: "ease",
+      easing: "ease-in-out",
       once: true,
+      offset: 50,
       anchorPlacement: "top-bottom",
     });
   };
@@ -30,13 +33,13 @@ const Home = () => {
 
   return (
     <div className='overflow-hidden'>
-      <Hero />
-      <Services />
-      <Resume />
-      <Projects />
-      <Skills />
-      <ClientReview />
-      <Blog />
+      <div id='home'><Hero /></div>
+      <div id='services'><Services /></div>
+      <div id='resume'><Resume /></div>
+      <div id='projects'><Projects /></div>
+      <div id='skills'><Skills /></div>
+      <div id='testimonials'><ClientReview /></div>
+      <div id='blog'><Blog /></div>
       <Contact/>
     </div>
   )
