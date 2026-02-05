@@ -10,8 +10,8 @@ const Projects = () => {
 
       <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
         {/* Project 1 */}
-        <div className="group">
-          <div
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="0" className="group">
+          <div 
             className="
               bg-[#F1FAEE]
               border border-black/50
@@ -41,7 +41,7 @@ const Projects = () => {
         </div>
 
         {/* Project 2 */}
-        <div className="group">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100"  className="group">
           <div
             className="
               bg-[#F1FAEE]
@@ -73,8 +73,8 @@ const Projects = () => {
         </div>
 
         {/* Project 3 */}
-        <div className="group">
-          <div
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200"className="group">
+          <div 
             className="
               bg-[#F1FAEE]
               border border-black/50
@@ -105,8 +105,8 @@ const Projects = () => {
         </div>
 
         {/* Project 4 */}
-        <div className="group">
-          <div
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" className="group">
+          <div 
             className="
               bg-[#F1FAEE]
               border border-black/50

@@ -1,4 +1,6 @@
 import { BiEnvelope, BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube, BiMap, BiPhone, BiX } from 'react-icons/bi'
+import "aos/dist/aos.css";
+
 
 const Contact = () => {
   return (
@@ -40,7 +42,7 @@ const Contact = () => {
             </div>
          </div>
          {/* Form */}
-         <div className='md:p-10 p-5 bg-[#A8DADC] rounded-lg'>
+         <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="0" className='md:p-10 p-5 bg-[#A8DADC] rounded-lg'>
             <input type="text" placeholder='Name' className='px-4 py-3.5 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70'/>
             <input type="email" placeholder='Email Address' className='px-4 py-3.5 mt-6 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70'/>
             <input type="text" placeholder='Phone Number' className='px-4 py-3.5 mt-6 bg-[#457B9D] text-white outline-none rounded-md w-full placeholder:text-white/70'/>
