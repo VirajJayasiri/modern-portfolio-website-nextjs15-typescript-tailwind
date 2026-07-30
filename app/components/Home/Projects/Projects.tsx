@@ -7,7 +7,7 @@ const projectList = [
     title: "ConnectHub – Real-Time Communication Platform",
     role: "Full-Stack Developer",
     year: "2026",
-    image: "/images/p1.jpg",
+    image: "/images/connecthub.png",
     github: "https://github.com/VirajJayasiri/connecthub-springboot-react",
     live: "",
     technologies: ["Java", "Spring Boot", "Spring Security", "React", "MongoDB", "JWT", "WebSocket", "STOMP", "LiveKit", "Docker", "AWS EC2"],

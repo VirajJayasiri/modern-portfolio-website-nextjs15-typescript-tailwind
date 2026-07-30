@@ -17,7 +17,7 @@ const Hero = () => {
                alt="Viraj Jayasiri" 
                width={220} 
                height={220} 
-               className="rounded-full border-[12px] border-white shadow-[0_10px_40px_rgba(0,0,0,0.15)] object-cover" 
+               className="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] aspect-square rounded-full border-[12px] border-white shadow-[0_10px_40px_rgba(0,0,0,0.15)] object-cover object-center" 
                data-aos="zoom-in" 
                data-aos-duration="800"
                priority
