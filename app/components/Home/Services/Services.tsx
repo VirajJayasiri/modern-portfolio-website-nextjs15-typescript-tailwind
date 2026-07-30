@@ -4,28 +4,31 @@ const Services = () => {
   return (
     <div className='pt-10 pb-16'>
       <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-black'>
-         Building Full-Stack Digital Solutions<br /> Through Code, Logic, & Collaboration
+         Core Technical <span className='text-[#E63946]'>Specializations</span>
       </h1>
-      <div className='w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-20 items-center'>
+      <p className='text-center text-gray-600 mt-3 max-w-2xl mx-auto px-4 text-sm sm:text-base'>
+         Combining solid software engineering principles, modern frameworks, and cloud workflows to deliver robust digital solutions.
+      </p>
+      <div className='w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-16 items-stretch'>
          <div data-aos="fade-right" data-aos-anchor-placement="top-center">
             <ServiceCard icon="/images/0s1.png"
-            name="UI & UX Engineering"
-            description="Designing clean and intuitive interfaces that prioritize usability and accessibility. Focused on responsive layouts, clear navigation, and consistent visual structure." />
+            name="Full-Stack & Real-Time Apps"
+            description="Building dynamic web applications featuring JWT authentication, real-time WebSockets, STOMP messaging, and video/audio integration with LiveKit, React & Spring Boot." />
          </div>
          <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="100">
             <ServiceCard icon="/images/0s2.png"
-            name="Web & Application Development"
-            description="Developing modern web and application solutions using current frameworks and tools. Emphasis on performance, scalability, and real-world problem solving." />
+            name="Backend & REST API Engineering"
+            description="Designing robust RESTful services using Spring Boot & FastAPI. Implementing secure token auth (JWT), Spring Security, relational SQL, and NoSQL MongoDB databases." />
          </div>
          <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="200">
             <ServiceCard icon="/images/0s3.png"
-            name="System Design & Problem Solving"
-            description="Applying logical thinking and creativity to break down complex problems into simple, effective solutions. Driven by curiosity and continuous improvement." />
+            name="AI & Computer Vision"
+            description="Developing intelligent computer vision pipelines utilizing OpenCV, MTCNN, and DeepFace for facial detection, feature extraction, similarity matching, and smart attendance tracking." />
          </div>
          <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="300">
             <ServiceCard icon="/images/0s4.png"
-            name="Software Development & Engineering"
-            description="Building maintainable and structured software using object-oriented principles and best practices. Focused on clean code, reusability, and long-term scalability." />
+            name="Cloud & DevOps Automation"
+            description="Containerizing applications with Docker, deploying to AWS EC2 & Firebase Hosting, and developing custom Java CLI automation tools with automated CI/CD via GitHub Actions." />
          </div>
       </div>
     </div>
