@@ -2,6 +2,7 @@ import { NavLinks } from '@/constant/constant'
 import Link from 'next/link'
 import { useEffect } from 'react';
 import { CgClose } from 'react-icons/cg'
+import { BiDownload } from 'react-icons/bi';
 
 type Props ={
   showNav:boolean;
@@ -43,6 +44,20 @@ const MobileNav = ({closeNav,showNav}:Props) => {
               <p className='text-black w-fit ml-12 border-b-[1.5px] pb-1 border-black sm:text-[30px]'>{link.label}</p>
               </Link>
           })}
+          <div className="ml-12 pt-2">
+            <a 
+               href="/Viraj_Jayasiri_CV.pdf"
+               download="Viraj_Jayasiri_CV.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               onClick={closeNav}
+               className='px-6 py-3 text-sm cursor-pointer rounded-lg bg-[#a8dadc] hover:bg-[#457b9d] hover:text-white transition-all duration-300 text-[#1D3557] inline-flex items-center space-x-2 font-medium shadow-sm'
+               aria-label="Download CV"
+            >
+               <BiDownload className='w-5 h-5'/>
+               <span>Download CV</span>
+            </a>
+          </div>
           {/* CrossIcon */}
         <CgClose 
            onClick={closeNav} 

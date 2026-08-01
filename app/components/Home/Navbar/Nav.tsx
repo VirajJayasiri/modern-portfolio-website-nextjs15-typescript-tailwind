@@ -65,13 +65,17 @@ const Nav = ({openNav}:Props) => {
          <div className='flex items-center space-x-4'>
 
             {/* CV Button */}
-            <button 
+            <a 
+               href="/Viraj_Jayasiri_CV.pdf"
+               download="Viraj_Jayasiri_CV.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
                className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-[#a8dadc] hover:bg-[#457b9d] hover:text-[white] transition-all duration-300 text-[#1D3557] flex items-center space-x-2'
                aria-label="Download CV"
             >
                <BiDownload className='w-5 h-5'/>
                <span>Download CV</span>
-            </button>
+            </a>
 
             {/* Burger Menu */}
             <HiBars3BottomRight 
